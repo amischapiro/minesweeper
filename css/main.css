@@ -1,0 +1,143 @@
+body{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/background.jpg)  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+h1{
+    color: springgreen;
+}
+h2{
+    margin-bottom: 3px;
+    font-style: italic;
+    color: rgb(184, 95, 53);
+}
+.lives{
+
+width: fit-content;
+margin: auto;
+color: lightskyblue;
+margin-bottom: 5px;
+}
+.lives span {
+    color: pink;
+}
+
+table{
+    margin: auto;
+}
+td {
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    border-bottom: darkgray solid 5px;
+    border-right: darkgray solid 5px;
+    border-top: white solid 5px;
+    border-left: white solid 5px;
+}
+td span{
+    display: none;
+}
+
+
+button{
+    width: 80px;
+    height: 30px;
+    margin:5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.smiley{
+    width: fit-content;
+    margin: 1px;
+}
+.smiley:hover{
+    transform: scale(2);
+}
+
+
+.beginner{
+    background: linear-gradient(to top,white,rgb(118, 219, 253));
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.advanced{
+    background: linear-gradient(to top, white, rgb(22, 99, 243));
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.expert{
+    background: linear-gradient(to top,white, rgb(44, 44, 170));
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.custom{
+    background-color: rgb(190, 189, 189) ;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.timer{
+    border: steelblue solid 3px;
+    min-width: 18px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+    color: rgb(26, 17, 25);
+    font-weight: bolder;
+    
+}
+
+.hint{
+    width: 100px;
+    height: 44px;
+    margin-bottom: 0px;
+    border-radius: 6px;
+    background-color: lightseagreen;
+    display: inline-flex ;
+}
+
+.hint-title{
+    font-weight: bolder;
+}
+
+.safe-click{
+    width: 100px;
+    height: fit-content;
+    font-size: x-small;
+    margin-top: 1px;
+    /* background-color: violet; */
+    background-color: #59a4bd;
+    border-radius: 6px;
+    
+}
+
+
+.safe-title{
+    font-weight: bolder;
+    font-size: small;
+}
+.num-safe{
+    font-weight: bolder;
+}
+
+.high-score{
+    background-color: #cfe;
+    width: 90px;
+    margin: auto;
+    text-align: left;
+    border-radius: 2px;
+}
+.score-title{
+    text-decoration: underline;
+    font-weight: bolder;
+}

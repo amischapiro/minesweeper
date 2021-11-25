@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="init()">
+    <h1>Minesweeper</h1>
+    <h2>Choose your difficulty</h2>
+    <button class="beginner" onclick="setLevel(4,2)">Beginner</button>
+    <button class="advanced" onclick="setLevel(8,12)">Advanced</button>
+    <button class="expert" onclick="setLevel(12,30)">Expert</button>
+    <button class="custom" onclick="customLevel()">Custom</button>
+    <br>
+    <br>
+    <h3 class="lives">Lives left: <span></span></h3>
+    <button class="hint" onclick="getHint(this)"> <span class="hint-title">Hints:</span> 
+    <span class="bulb1">💡</span><span class="bulb2">💡</span><span class="bulb3">💡</span></button>
+    <button class="safe-click" onclick="safeClick(this)"><span class="safe-title">Safe Click</span> <br>clicks left: <span class="num-safe">3</span> (only after first click)</button>
+    <div class="high-score"> <span class="score-title">Best scores:</span> 
+        <br>Beginner: <span class="beginner-score"></span>
+        <br>Advanced: <span class="advanced-score"></span>
+        <br>Expert: <span class="expert-score"></span>
+    
+    </div>
+    <div class="timer"><h4></h4></div>
+    <button class="smiley" onclick="init()"> 😁</button>
+    <div class="container">
+        <table  cellpadding="5">
+        <tbody class="board"></tbody>
+        </table>
+    </div>
+   <br>
+   <br>
+   <br>
+   <br>
+    
+    <footer>
+        <p> &copy; by Amitai Schapiro
+        </p>
+    </footer>
+
+    <script src="js/utils (2).js"></script>
+    <script src="js/mines.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
